@@ -18,6 +18,7 @@
   "homepage": "https://github.com/samuelsilvadev/personal-portifolio-freeCodeCamp#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0"
   }
 }
