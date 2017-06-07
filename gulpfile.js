@@ -28,6 +28,10 @@ gulp.task('sassProd', () => {
         .pipe(gulp.dest(cssMinDest));
 });
 
+gulp.task('watch', () => {
+    gulp.watch(scssFiles,['sassDev']);
+});
+
 gulp.task('default', () => {
   console.log('Gulp funcionando...');
 });

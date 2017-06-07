@@ -1,5 +1,8 @@
 @import "cores.scss";
 
+body{
+    background-color: $background-body;
+}
 
 main {
     & h1{
@@ -7,10 +10,21 @@ main {
         text-align: center;
         background-color: $background-header;
         color: $color-header;
+        padding: 20px;
     }
 }
 
 h2{
     font-size: 40px;
+}
+
+p{
+    text-align: justify;
+}
+
+blockquote{
+    background-color: $background-blockquote;
+    padding: 16px;
+    border: 10px solid $border-color-blockquote;
 }
 

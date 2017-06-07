@@ -1,0 +1,25 @@
+body {
+  background-color: #e0ffee;
+}
+
+main h1 {
+  font-size: 60px;
+  text-align: center;
+  background-color: #781e3c;
+  color: #fafffa;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+p {
+  text-align: justify;
+}
+
+blockquote {
+  background-color: #b9b9b9;
+  padding: 16px;
+  border: 10px solid #c2ccca;
+}
