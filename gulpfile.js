@@ -6,23 +6,24 @@ const scssFiles = './scss/style.scss';
 const cssDest = './css';
 const cssMinDest = './dist/css';
 
-const sassDevOptions = {
-  outputStyle: 'expanded'
-}
-
-const sassProdOptions = {
-  outputStyle: 'compressed'
-}
+const options = {
+  'sassDevOptions' : {
+    outputStyle: 'expanded'
+  },
+ 'sassProdOptions' : {
+    outputStyle: 'compressed'
+  }
+};
 
 gulp.task('sassDev', () => {
     return gulp.src(scssFiles)
-        .pipe(sass(sassDevOptions).on('error', sass.logError))
+        .pipe(sass(options.sassDevOptions).on('error', sass.logError))
         .pipe(gulp.dest(cssDest));
 });
 
 gulp.task('sassProd', () => {
     return gulp.src(scssFiles)
-        .pipe(sass(sassProdOptions).on('error', sass.logError))
+        .pipe(sass(options.sassProdOptions).on('error', sass.logError))
         .pipe(rename('style.min.css'))
         .pipe(gulp.dest(cssMinDest));
 });
