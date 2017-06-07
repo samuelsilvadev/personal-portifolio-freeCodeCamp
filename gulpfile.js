@@ -1,6 +1,8 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const rename = require('gulp-rename');
+const browserSync = require('browser-sync').create();
+const reload      = browserSync.reload;
 
 const scssFiles = './scss/style.scss';
 const cssDest = './css';
@@ -30,6 +32,15 @@ gulp.task('sassProd', () => {
 
 gulp.task('watch', () => {
     gulp.watch(scssFiles,['sassDev']);
+});
+
+gulp.task('serve', function () {
+  browserSync.init({
+    server: {
+      baseDir: "./"
+    }
+  });
+  gulp.watch("*.html").on("change", reload);
 });
 
 gulp.task('default', () => {
