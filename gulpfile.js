@@ -4,11 +4,10 @@ const rename = require('gulp-rename');
 const browserSync = require('browser-sync').create();
 const reload      = browserSync.reload;
 
-const scssFiles = './scss/style.scss';
-const cssDest = './css';
-const cssMinDest = './dist/css';
-
 const options = {
+  'scssFiles'   : './scss/style.scss',
+  'cssDest'     : './css',
+  'cssMinDest'  : './dist/css',
   'sassDevOptions' : {
     outputStyle: 'expanded'
   },
@@ -18,20 +17,20 @@ const options = {
 };
 
 gulp.task('sassDev', () => {
-    return gulp.src(scssFiles)
+    return gulp.src(options.scssFiles)
         .pipe(sass(options.sassDevOptions).on('error', sass.logError))
-        .pipe(gulp.dest(cssDest));
+        .pipe(gulp.dest(options.cssDest));
 });
 
 gulp.task('sassProd', () => {
-    return gulp.src(scssFiles)
+    return gulp.src(options.scssFiles)
         .pipe(sass(options.sassProdOptions).on('error', sass.logError))
         .pipe(rename('style.min.css'))
-        .pipe(gulp.dest(cssMinDest));
+        .pipe(gulp.dest(options.cssMinDest));
 });
 
 gulp.task('watch', () => {
-    gulp.watch(scssFiles,['sassDev']);
+    gulp.watch(options.scssFiles,['sassDev']);
 });
 
 gulp.task('serve', function () {
