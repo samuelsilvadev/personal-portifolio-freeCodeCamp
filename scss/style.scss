@@ -10,8 +10,7 @@ main {
         text-align: center;
         background-color: $background-header;
         color: $color-header;
-        padding: 20px;
-        margin:0;
+        padding: 20px;        
     }
 }
 
@@ -28,7 +27,5 @@ blockquote{
     padding: 16px;
     border: 10px solid $border-color-blockquote;
     width: 250px;
-    margin:0;
     box-sizing: border-box;
 }
-
