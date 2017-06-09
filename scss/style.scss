@@ -29,3 +29,37 @@ blockquote{
     width: 250px;
     box-sizing: border-box;
 }
+
+nav{
+    background-color: $background-nav;
+    color: $color-secondary;
+    text-align: center;
+    padding: 20px;
+    font-family: "Open Sans Condensed", sans-serif;
+    & h1{
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+    & a{
+        color: inherit;
+    }
+}
+
+.icone-rede-social{
+    width: 90px;
+}
+
+
+strong{
+    font-weight: 600;
+}
+
+em{
+    font-style: italic;
+}
+
+footer{
+    background-color: $background-footer;
+    color: $color-secondary;
+    padding: 20px;
+}
