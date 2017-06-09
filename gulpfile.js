@@ -29,17 +29,17 @@ gulp.task('sassProd', () => {
         .pipe(gulp.dest(options.cssMinDest));
 });
 
-gulp.task('watch', () => {
+gulp.task('watch', ['sassDev', 'serve'], () => {
     gulp.watch(options.scssFiles,['sassDev']);
 });
 
 gulp.task('serve', function () {
-  browserSync.init({
+  browserSync.init(['./css/**/'], {
     server: {
       baseDir: "./"
     }
   });
-  gulp.watch("*.html").on("change", reload);
+  gulp.watch(['*.html','*.css']).on("change", reload);
 });
 
 gulp.task('default', () => {
