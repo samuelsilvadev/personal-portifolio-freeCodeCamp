@@ -41,9 +41,19 @@ blockquote{
     border: 10px solid $border-color-blockquote;
     width: 250px;
     margin: 0;
-    box-sizing: border-box;
-    float: right;
+    box-sizing: border-box;    
 }
+
+.blockquote{
+    &-right{
+        float: right;
+    }
+    &-left{
+        float: left;
+    }
+}
+
+
 
 nav{
     @include font-family;
