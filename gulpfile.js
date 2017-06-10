@@ -33,13 +33,13 @@ gulp.task('watch', ['sassDev', 'serve'], () => {
     gulp.watch(options.scssFiles,['sassDev']);
 });
 
-gulp.task('serve', function () {
+gulp.task('serve', () => {
   browserSync.init(['./css/**/'], {
     server: {
       baseDir: "./"
     }
   });
-  gulp.watch(['*.html','*.css']).on("change", reload);
+  gulp.watch(['*.html','*.css','*.scss']).on("change", reload);
 });
 
 gulp.task('default', () => {
