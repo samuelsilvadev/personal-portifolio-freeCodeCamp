@@ -7,15 +7,17 @@ body{
 }
 
 main {
+    float: left;
+    width: 85%;
     & h1{
         font-size: 60px;
         text:{
             transform: uppercase;
             align: center;
-        }        
+        }
         background-color: $background-header;
         color: $color-header;
-        padding: 20px; 
+        padding: 20px;              
     }
 }
 
@@ -77,11 +79,21 @@ em{
     font-style: italic;
 }
 
+.img-profile{
+    width: 200px;
+    float: right;
+    margin: 0;
+}
+
 aside{
     @include font-family;
+    width: 15%;
+    box-sizing: border-box;
     background-color: $background-nav;
     text-align: center;
     padding: 20px;
+    float: right;
+    clear: right;
     & > ul > li{
         display: inline-block;
         & > a > i{
@@ -91,7 +103,8 @@ aside{
 }
 
 footer{
+    @include clearfix;
     background-color: $background-footer;
     color: $color-secondary;
-    padding: 20px;
+    padding: 20px;    
 }
