@@ -2,3 +2,7 @@
 @mixin font-family(){
     font-family: "Open Sans Condensed", sans-serif;
 }
+
+@mixin clearfix{
+    clear: both;
+}

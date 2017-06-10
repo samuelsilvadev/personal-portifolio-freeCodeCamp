@@ -9,15 +9,24 @@ body{
 main {
     & h1{
         font-size: 60px;
-        text-align: center;
+        text:{
+            transform: uppercase;
+            align: center;
+        }        
         background-color: $background-header;
         color: $color-header;
-        padding: 20px;   
+        padding: 20px; 
     }
+}
+
+.container{
+    width: 900px;
+    margin: 0 auto;
 }
 
 h2{
     @include font-family;
+    @include clearfix;
     font-size: 40px;
 }
 
@@ -31,7 +40,9 @@ blockquote{
     padding: 16px;
     border: 10px solid $border-color-blockquote;
     width: 250px;
+    margin: 0;
     box-sizing: border-box;
+    float: right;
 }
 
 nav{
@@ -61,6 +72,12 @@ aside{
     background-color: $background-nav;
     text-align: center;
     padding: 20px;
+    & > ul > li{
+        display: inline-block;
+        & > a > i{
+            font-size: 20px;
+        }
+    }
 }
 
 footer{
