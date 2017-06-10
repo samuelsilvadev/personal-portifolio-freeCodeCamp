@@ -1,4 +1,5 @@
 @import "cores.scss";
+@import "meus-mixins.scss";
 
 body{
     background-color: $background-body;
@@ -10,7 +11,7 @@ main {
         text-align: center;
         background-color: $background-header;
         color: $color-header;
-        padding: 20px;        
+        padding: 20px;   
     }
 }
 
@@ -31,11 +32,10 @@ blockquote{
 }
 
 nav{
-    background-color: $background-nav;
+    @include font-family;
     color: $color-secondary;
     text-align: center;
-    padding: 20px;
-    font-family: "Open Sans Condensed", sans-serif;
+    padding: 20px;    
     & h1{
         font-size: 30px;
         margin-bottom: 25px;
@@ -49,7 +49,6 @@ nav{
     width: 90px;
 }
 
-
 strong{
     font-weight: 600;
 }
@@ -62,4 +61,10 @@ footer{
     background-color: $background-footer;
     color: $color-secondary;
     padding: 20px;
+}
+
+aside{
+    @include font-family;
+    background-color: $background-nav;
+    text-align: center;
 }
