@@ -1,5 +1,6 @@
 @import "cores.scss";
 @import "meus-mixins.scss";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 
 body{
     background-color: $background-body;
@@ -16,11 +17,13 @@ main {
 }
 
 h2{
+    @include font-family;
     font-size: 40px;
 }
 
 p{
     text-align: justify;
+    margin: 30px 0;
 }
 
 blockquote{
@@ -45,10 +48,6 @@ nav{
     }
 }
 
-.icone-rede-social{
-    width: 90px;
-}
-
 strong{
     font-weight: 600;
 }
@@ -57,14 +56,15 @@ em{
     font-style: italic;
 }
 
-footer{
-    background-color: $background-footer;
-    color: $color-secondary;
-    padding: 20px;
-}
-
 aside{
     @include font-family;
     background-color: $background-nav;
     text-align: center;
+    padding: 20px;
+}
+
+footer{
+    background-color: $background-footer;
+    color: $color-secondary;
+    padding: 20px;
 }
