@@ -82,22 +82,26 @@ em{
 
 .img-profile{
     @include border-aside;
-    width: 15%;
+    width: 16%;
     float: right;
     margin: 0;
-    box-sizing: border-box;    
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 aside{
     @include font-family;
     @include border-aside;
-    width: 14%;
+    width: 15%;
     box-sizing: border-box;
     background-color: $background-nav;
     text-align: center;
     padding: 20px;
     float: right;
     clear: right;    
+    position: relative;
+    top: 278px;
     & > ul > li{
         display: inline-block;
         & > a > i{
