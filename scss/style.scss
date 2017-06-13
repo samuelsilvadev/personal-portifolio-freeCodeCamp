@@ -17,7 +17,8 @@ main {
         }
         background-color: $background-header;
         color: $color-header;
-        padding: 20px;              
+        padding: 20px;  
+        border-bottom: 10px  solid $background-footer;            
     }
 }
 
@@ -80,20 +81,23 @@ em{
 }
 
 .img-profile{
-    width: 200px;
+    @include border-aside;
+    width: 15%;
     float: right;
     margin: 0;
+    box-sizing: border-box;    
 }
 
 aside{
     @include font-family;
-    width: 15%;
+    @include border-aside;
+    width: 14%;
     box-sizing: border-box;
     background-color: $background-nav;
     text-align: center;
     padding: 20px;
     float: right;
-    clear: right;
+    clear: right;    
     & > ul > li{
         display: inline-block;
         & > a > i{
