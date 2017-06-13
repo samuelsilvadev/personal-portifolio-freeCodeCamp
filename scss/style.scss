@@ -17,7 +17,7 @@ main {
         }
         background-color: $background-header;
         color: $color-header;
-        padding: 20px;  
+        padding: 40px;  
         border-bottom: 10px  solid $background-footer;            
     }
 }
@@ -25,6 +25,8 @@ main {
 .container{
     width: 900px;
     margin: 0 auto;
+    padding: 40px 0;
+    padding-bottom: 40px;
 }
 
 h2{
@@ -114,5 +116,8 @@ footer{
     @include clearfix;
     background-color: $background-footer;
     color: $color-secondary;
-    padding: 20px;    
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
