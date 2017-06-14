@@ -1,0 +1,9 @@
+footer{
+    @include clearfix;
+    background-color: $background-footer;
+    color: $color-secondary;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

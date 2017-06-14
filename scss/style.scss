@@ -1,5 +1,6 @@
 @import "cores.scss";
 @import "meus-mixins.scss";
+@import "footer.scss";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 
 body{
@@ -59,8 +60,6 @@ blockquote{
     }
 }
 
-
-
 nav{
     @include font-family;
     color: $color-secondary;
@@ -111,14 +110,4 @@ aside{
             font-size: 20px;
         }
     }
-}
-
-footer{
-    @include clearfix;
-    background-color: $background-footer;
-    color: $color-secondary;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
