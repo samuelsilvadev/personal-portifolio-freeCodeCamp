@@ -4,6 +4,10 @@
 @import "footer.scss";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 
+.contact, .works{
+    display: none;
+}
+
 body{
     background-color: $background-body;
 }
