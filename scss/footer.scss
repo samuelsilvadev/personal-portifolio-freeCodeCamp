@@ -1,3 +1,6 @@
+@import "cores.scss";
+@import "meus-mixins.scss";
+
 footer{
     @include clearfix;
     text-align: center;

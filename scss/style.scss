@@ -1,5 +1,6 @@
 @import "cores.scss";
 @import "meus-mixins.scss";
+@import "contact.scss";
 @import "footer.scss";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 
@@ -105,7 +106,7 @@ aside{
     box-sizing: border-box;
     background-color: $background-nav;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     float: right;
     clear: right;    
     position: relative;
