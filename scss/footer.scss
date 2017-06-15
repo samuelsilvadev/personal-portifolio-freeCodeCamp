@@ -1,5 +1,6 @@
 footer{
     @include clearfix;
+    text-align: center;
     background-color: $background-footer;
     color: $color-secondary;
     padding: 20px;
