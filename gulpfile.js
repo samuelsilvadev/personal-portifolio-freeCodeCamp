@@ -5,7 +5,7 @@ const browserSync = require('browser-sync').create();
 const reload      = browserSync.reload;
 
 const options = {
-  'scssFiles'   : './scss/style.scss',
+  'scssFiles'   : './scss/*.scss',
   'cssDest'     : './css',
   'cssMinDest'  : './dist/css',
   'sassDevOptions' : {
