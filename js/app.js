@@ -21,7 +21,7 @@ addEventListener('load', () => {
             return;
         }
         if(tipoMenu === 'portifolio'){
-            mostraEscondeSections('hide', 'block', 'none')
+            mostraEscondeSections('none', 'block', 'none')
             return;
         }
         if(tipoMenu === 'contato'){
@@ -31,10 +31,6 @@ addEventListener('load', () => {
     }
 
     function mostraEscondeSections(sobreMim, portifolio, contato){
-        console.log(sobreMim, portifolio, contato);
-        console.log(aboutMe.style);
-        console.log(works.style);
-        console.log(contact.style);
         aboutMe.style.display = sobreMim;
         works.style.display = portifolio;
         contact.style.display = contato;
