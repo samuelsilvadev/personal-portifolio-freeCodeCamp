@@ -7,6 +7,7 @@ addEventListener('load', () => {
 
     for(item of itemMenu){
         item.addEventListener('click', (e) => {
+            e = e || window.event;
             e.preventDefault();
             verificaMenu(e.srcElement.attributes['data-tipo'].value);
             console.log(e.srcElement.attributes['data-tipo']);
@@ -16,15 +17,15 @@ addEventListener('load', () => {
 
     function verificaMenu(tipoMenu){
         if(tipoMenu === 'sobre-mim'){
-            mostraEscondeSections('block', 'hide', 'hide')
+            mostraEscondeSections('block', 'none', 'none')
             return;
         }
         if(tipoMenu === 'portifolio'){
-            mostraEscondeSections('hide', 'block', 'hide')
+            mostraEscondeSections('hide', 'block', 'none')
             return;
         }
         if(tipoMenu === 'contato'){
-            mostraEscondeSections('hide', 'hide', 'block')
+            mostraEscondeSections('none', 'none', 'block')
             return;
         }
     }
