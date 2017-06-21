@@ -1,4 +1,11 @@
 addEventListener('load', () => {
+   
+   carregaRegrasMenus();
+
+});
+
+const carregaRegrasMenus = function carregaRegrasMenus(){
+
     let aboutMe = document.querySelector('.about-me');
     let contact = document.querySelector('.contact');
     let works = document.querySelector('.works');
@@ -13,7 +20,6 @@ addEventListener('load', () => {
             console.log(e.srcElement.attributes['data-tipo']);
         })
     }
-
 
     function verificaMenu(tipoMenu){
         if(tipoMenu === 'sobre-mim'){
@@ -35,6 +41,4 @@ addEventListener('load', () => {
         works.style.display = portifolio;
         contact.style.display = contato;
     }
-
-
-});
+}
