@@ -16,8 +16,8 @@ const carregaRegrasMenus = function carregaRegrasMenus(){
         item.addEventListener('click', (e) => {
             e = e || window.event;
             e.preventDefault();
-            verificaMenu(e.srcElement.attributes['data-tipo'].value);
-            console.log(e.srcElement.attributes['data-tipo']);
+            const elemento = e.target || e.srcElement;
+            verificaMenu(elemento.attributes['data-tipo'].value);            
         })
     }
 
