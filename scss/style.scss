@@ -94,28 +94,34 @@ em{
     font-style: italic;
 }
 
-.img-profile{
-    @include border-aside;
-    width: 16%;
-    float: right;
-    margin: 0;
+.info{
     position: absolute;
     top: 0;
     right: 0;
+    width: 15%;
+}
+
+.img-profile{
+    @include border-aside;
+    float: right;
+    width: 100%;
+    margin: 0;
 }
 
 aside{
     @include font-family;
     @include border-aside;
-    width: 15%;
+    
+    width: 90%;
     box-sizing: border-box;
     background-color: $background-nav;
     text-align: center;
     padding: 15px;
     float: right;
-    clear: right;    
+    clear: right;
+    
     position: relative;
-    top: 278px;
+    right: 0;
     & > ul > li{
         display: inline-block;
         & > a > i{
