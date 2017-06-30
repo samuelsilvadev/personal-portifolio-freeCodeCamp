@@ -102,7 +102,7 @@ aside{
     box-sizing: border-box;
     background-color: $background-nav;
     text-align: center;
-    padding: 15px;
+    padding-bottom: 15px;
     float: right;
     clear: right;
     
@@ -113,7 +113,7 @@ aside{
         @include font-family;
         color: $color-secondary;
         text-align: center;
-        padding: 20px;    
+        padding: 10px;    
         & h1{
             font-size: 30px;
             margin-bottom: 25px;
