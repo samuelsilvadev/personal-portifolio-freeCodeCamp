@@ -48,6 +48,6 @@ const carregaRegrasMenus = function carregaRegrasMenus(){
     }
 
     const mudarTituloMenu = function mudarTituloMenu(novoTitulo){
-        console.log(document.querySelector('.geral-title').textContent = novoTitulo);
+        document.querySelector('.geral-title').textContent = novoTitulo;        
     }
 }

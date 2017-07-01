@@ -40,6 +40,10 @@ main {
     padding-bottom: 90px;
 }
 
+.geral-title{
+    font-weight: bold;
+}
+
 h2{
     @include font-family;
     @include clearfix;
