@@ -13,6 +13,10 @@ body{
     background-color: $background-body;
 }
 
+img{
+    max-width: 100%;
+}
+
 main {
     float: left;
     width: 85%;
@@ -90,7 +94,6 @@ em{
 .img-profile{
     @include border-aside;
     float: right;
-    width: 100%;
     margin: 0;
 }
 
