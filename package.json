@@ -1,28 +1,28 @@
 {
-  "name": "personal-portifolio-freecodecamp",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": "git+https://github.com/samuelsilvadev/personal-portifolio-freeCodeCamp.git",
-  "author": "SAMUEL SILVA",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/samuelsilvadev/personal-portifolio-freeCodeCamp/issues"
-  },
-  "homepage": "https://github.com/samuelsilvadev/personal-portifolio-freeCodeCamp#readme",
-  "devDependencies": {
-    "browser-sync": "^2.18.12",
-    "gulp": "^3.9.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-imagemin": "^3.1.1",
-    "gulp-plumber": "^1.1.0"
-  },
-  "dependencies": {
-    "css-reset": "^0.0.1",
-    "font-awesome": "^4.7.0"
-  }
+	"name": "personal-portifolio-freecodecamp",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": "git+https://github.com/samuelsilvadev/personal-portifolio-freeCodeCamp.git",
+	"author": "SAMUEL SILVA",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/samuelsilvadev/personal-portifolio-freeCodeCamp/issues"
+	},
+	"homepage": "https://github.com/samuelsilvadev/personal-portifolio-freeCodeCamp#readme",
+	"devDependencies": {
+		"browser-sync": "^2.18.12",
+		"gulp": "^3.9.1",
+		"gulp-rename": "^1.2.2",
+		"gulp-sass": "^3.1.0",
+		"gulp-imagemin": "^3.1.1",
+		"gulp-plumber": "^1.1.0"
+	},
+	"dependencies": {
+		"css-reset": "^0.0.1",
+		"font-awesome": "^4.7.0"
+	}
 }

@@ -1,13 +1,12 @@
-
-@mixin font-family(){
+@mixin font-family() {
     font-family: "Open Sans Condensed", sans-serif;
 }
 
-@mixin clearfix{
+@mixin clearfix {
     clear: both;
 }
 
-@mixin border-aside{
-    border-left: 10px  solid $background-footer;
-    border-bottom: 10px  solid $background-footer;
+@mixin border-aside {
+    border-left: 10px solid $background-footer;
+    border-bottom: 10px solid $background-footer;
 }

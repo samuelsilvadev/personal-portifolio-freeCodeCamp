@@ -4,107 +4,106 @@
 @import "footer.scss";
 @import "works.scss";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
-
-.contact, .works{
+.contact,
+.works {
     display: none;
 }
 
-body{
+body {
     background-color: $background-body;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
 main {
     float: left;
     width: 85%;
-    & h1{
+    & h1 {
         font-size: 2.5em;
-        text:{
+        text: {
             transform: uppercase;
             align: center;
         }
         background-color: $background-header;
         color: $color-header;
-        padding: 40px;  
-        border-bottom: 10px  solid $background-footer;            
+        padding: 40px;
+        border-bottom: 10px solid $background-footer;
     }
 }
 
-.container{
+.container {
     width: 80%;
     margin: 0 auto;
     padding: 40px 0;
     padding-bottom: 90px;
 }
 
-.geral-title{
+.geral-title {
     font-weight: bold;
 }
 
-h2{
+h2 {
     @include font-family;
     @include clearfix;
     font-size: 40px;
     margin: 30px 0;
 }
 
-p{
+p {
     text-align: justify;
 }
 
-.last-p{
+.last-p {
     margin: 30px 10px;
 }
 
-blockquote{
+blockquote {
     background-color: $background-blockquote;
     padding: 16px;
     border: 10px solid $border-color-blockquote;
     width: 200px;
     margin: 0;
-    box-sizing: border-box;    
+    box-sizing: border-box;
 }
 
-.blockquote{
-    &-right{
+.blockquote {
+    &-right {
         float: right;
         margin-left: 20px;
     }
-    &-left{
+    &-left {
         float: left;
         margin-right: 20px;
         margin-bottom: 20px;
     }
 }
 
-strong{
+strong {
     font-weight: 600;
 }
 
-em{
+em {
     font-style: italic;
 }
 
-.info{
+.info {
     position: absolute;
     top: 0;
     right: 0;
     width: 15%;
 }
 
-.img-profile{
+.img-profile {
     @include border-aside;
     float: right;
     margin: 0;
 }
 
-aside{
+aside {
     @include font-family;
     @include border-aside;
-    
     width: 95%;
     box-sizing: border-box;
     background-color: $background-nav;
@@ -112,28 +111,24 @@ aside{
     padding-bottom: 15px;
     float: right;
     clear: right;
-    
     position: relative;
     right: 0;
-
-    & nav{
+    & nav {
         @include font-family;
         color: $color-secondary;
         text-align: center;
-        padding: 10px;    
-        & h1{
+        padding: 10px;
+        & h1 {
             font-size: 30px;
             margin-bottom: 25px;
-            
         }
-        & a{
+        & a {
             color: inherit;
         }
     }
-
-    & > ul > li{
+    &>ul>li {
         display: inline-block;
-        & > a > i{
+        &>a>i {
             font-size: 20px;
         }
     }

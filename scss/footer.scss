@@ -1,7 +1,6 @@
 @import "cores.scss";
 @import "meus-mixins.scss";
-
-footer{
+footer {
     @include clearfix;
     text-align: center;
     background-color: $background-footer;

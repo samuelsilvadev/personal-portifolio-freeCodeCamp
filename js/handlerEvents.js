@@ -1,4 +1,4 @@
 
-addEventListener('load', () => {   
-   carregaRegrasMenus();
+addEventListener('load', () => {
+	carregaRegrasMenus();
 });
