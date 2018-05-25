@@ -1,11 +1,18 @@
+# personal-portifolio-freecodecamp
 
-# como fazer para visualizar o projeto?
+This project is a challenge to freeCodeCamp's certification
 
-## Passo 1
+## How to install
 
-> npm install
+- [sudo] npm install -g gulp
+- npm install
+- npm start
 
-## Passo 2
+## Contacts
 
-> gulp sassProd
+- samuelsilvawb@gmail.com
+- [Twitter](https://twitter.com/samuelsilvadev)
 
+## License
+
+Samuel Silva &copy; MIT
