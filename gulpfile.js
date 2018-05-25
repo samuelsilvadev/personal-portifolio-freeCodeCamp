@@ -3,6 +3,8 @@ const sass = require('gulp-sass');
 const rename = require('gulp-rename');
 const browserSync = require('browser-sync').create();
 const reload      = browserSync.reload;
+const imagemin = require('gulp-imagemin');
+const plumber = require('gulp-plumber');
 
 const options = {
   'scssFiles'   : './scss/*.scss',
@@ -29,7 +31,14 @@ gulp.task('sassProd', () => {
         .pipe(gulp.dest(options.cssMinDest));
 });
 
-gulp.task('watch', ['sassDev', 'serve'], () => {
+gulp.task('images', (tmp) => {
+	return gulp.src(['./imgs/**/*'])
+		.pipe(plumber())
+		.pipe(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true }))
+		.pipe(gulp.dest('./dist/imgs/'));
+});
+
+gulp.task('watch', ['sassDev', 'images', 'serve'], () => {
     gulp.watch(options.scssFiles,['sassDev']);
 });
 
